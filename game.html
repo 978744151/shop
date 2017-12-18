@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html>
+<head lang="zh">
+    <meta charset="utf-8">
+    <title></title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="telephone=no,email=no"/>
+    <!-- <link rel="shortcut icon" href="{HOME_THEME_PATH}images/base/title.png"> -->
+    <meta name="applicable-device" content="pc,mobile"/>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/iscroll.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/fastclick.js"></script>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/game.css?v=1">
+    <link rel="stylesheet" href="css/bag.css?v=1">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <script src='js/numberAnimate.js'></script>
+    <script src="js/base.js"></script>
+    <script src="js/game.js"></script>
+    <script type="text/javascript">
+
+    </script>
+</head>
+    <body onselectstart="return false;" oncontextmenu="self.event.returnValue=false;">
+    <div class='loadingbox' id='loadingbox'>
+        <img src="images/game_logo.png"/>
+        <span>LOADING</span>
+    </div>
+    <div class='alert_box' id='BAG'>
+        <div class='alert_body'>
+            <div class='alert_title'>
+                <span>我的背包</span>
+                <div class='alert_close'>
+                    <img src="images/alert_close_btn.png"/>
+                </div>
+            </div>
+            <div class='alert_content'>
+                <div class='bag_body'>
+                    <!----------BAG START------------>
+                    <div class="person">
+                            <ul>
+                                <li class='selected'>
+                                    <img src="./images/mine-person-bg1.png" alt="" class="four-angle">
+                                    <div class="person-top">
+                                        <img src="./images/mine-person_12.png" alt="">
+                                    </div>
+                                    <div class="person-top1">
+                                        <img src="./images/mine-person-bg2.png" alt="">
+                                        <div class="line"></div>
+                                        <div class="collect-all">已集齐</div>
+
+                                        <div class="hero">
+                                            <div class="hero-main">
+                                                <img src="./images/mine-person-hero.png" alt="">
+                                            </div>
+                                        </div>
+                                        <a href="javascript:;" class="click-all">
+                                            <div class="click">点击兑换</div>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <img src="./images/mine-person-bg1.png" alt="" class="four-angle">
+                                    <div class="person-top">
+                                        <img src="./images/mine-person_05.png" alt="">
+                                        <div class="name-bg">小乔</div>
+                                        <div class="line"></div>
+                                    </div>
+                                    <div class="person-top1">
+                                        <img src="./images/mine-person-bg2.png" alt="">
+                                    </div>
+                                     <div class="shade">
+                                        <div class="shade-title">
+                                            <div class="lock-main">
+                                                <img src="./images/mine-person-lock.png" alt="">
+                                            </div>
+                                            <p>小乔</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="on">
+                                    <img src="./images/mine-person-bg1.png" alt="" class="four-angle">
+                                    <div class="person-top">
+                                        <img src="./images/mine-person_06.png" alt="">
+                                        <div class="name-bg" >王昭君</div>
+                                        <div class="line"></div>
+                                    </div>
+                                    <div class="person-top1">
+                                        <img src="./images/mine-person-bg2.png" alt="">
+                                    </div>
+                                    <div class="shade">
+                                        <div class="shade-title">
+                                            <div class="lock-main">
+                                                <img src="./images/mine-person-lock.png" alt="">
+                                            </div>
+                                            <p>王昭君</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <img src="./images/mine-person-bg1.png" alt="">
+                                    <div class="person-top">
+                                        <img src="./images/mine-person_01.png" alt="">
+                                        <div class="name-bg">赵云</div>
+                                        <div class="line"></div>
+                                    </div>
+                                    <div class="person-top1">
+                                        <img src="./images/mine-person-bg2.png" alt="">
+                                    </div>
+                                    <div class="shade">
+                                        <div class="shade-title">
+                                            <div class="lock-main">
+                                                <img src="./images/mine-person-lock.png" alt="">
+                                            </div>
+                                            <p>赵云</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <img src="./images/mine-person-bg1.png" alt="" class="four-angle">
+                                    <div class="person-top">
+                                        <img src="./images/mine-person_02.png" alt="">
+                                        <div class="name-bg">项羽</div>
+                                        <div class="line"></div>
+                                    </div>
+                                    <div class="person-top1">
+                                        <img src="./images/mine-person-bg2.png" alt="">
+                                    </div>
+                                    <div class="shade">
+                                        <div class="shade-title">
+                                            <div class="lock-main">
+                                                <img src="./images/mine-person-lock.png" alt="">
+                                            </div>
+                                            <p>项羽</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <img src="./images/mine-person-bg1.png" alt="" class="four-angle">
+                                    <div class="person-top">
+                                        <img src="./images/mine-person_03.png" alt="">
+                                        <div class="name-bg">孙尚香</div>
+                                        <div class="line"></div>
+                                    </div>
+                                    <div class="person-top1">
+                                        <img src="./images/mine-person-bg2.png" alt="">
+                                    </div>
+                                    <div class="shade">
+                                        <div class="shade-title">
+                                            <div class="lock-main">
+                                                <img src="./images/mine-person-lock.png" alt="">
+                                            </div>
+                                            <p>孙尚香</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <img src="./images/mine-person-bg1.png" alt="" class="four-angle">
+                                    <div class="person-top">
+                                        <img src="./images/mine-person_04.png" alt="">
+                                        <div class="name-bg">阿珂</div>
+                                        <div class="line"></div>
+                                    </div>
+                                    <div class="person-top1">
+                                        <img src="./images/mine-person-bg2.png" alt="">
+                                    </div>
+                                    <div class="shade">
+                                        <div class="shade-title">
+                                            <div class="lock-main">
+                                                <img src="./images/mine-person-lock.png" alt="">
+                                            </div>
+                                            <p>阿珂</p>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <img src="./images/mine-person-bg1.png" alt="" class="four-angle">
+                                    <div class="person-top">
+                                        <img src="./images/mine-person_07.png" alt="">
+                                        <div class="name-bg">老夫子</div>
+                                        <div class="line"></div>
+                                    </div>
+                                    <div class="person-top1">
+                                        <img src="./images/mine-person-bg2.png" alt="">
+                                    </div>
+                                    <div class="shade">
+                                        <div class="shade-title">
+                                            <div class="lock-main">
+                                                <img src="./images/mine-person-lock.png" alt="">
+                                            </div>
+                                            <p>老夫子</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                
+                                <li>
+                                    <img src="./images/mine-person-bg1.png" alt="" class="four-angle">
+                                    <div class="person-top">
+                                        <img src="./images/mine-person_08.png" alt="">
+                                        <div class="name-bg">鲁班</div>
+                                        <div class="line"></div>
+                                    </div>
+                                    <div class="person-top1">
+                                        <img src="./images/mine-person-bg2.png" alt="">
+                                    </div>
+                                    <div class="shade">
+                                        <div class="shade-title">
+                                            <div class="lock-main">
+                                                <img src="./images/mine-person-lock.png" alt="">
+                                            </div>
+                                            <p>鲁班</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <img src="./images/mine-person-bg1.png" alt="" class="four-angle">
+                                    <div class="person-top">
+                                        <img src="./images/mine-person_09.png" alt="">
+                                        <div class="name-bg">高渐离</div>
+                                        <div class="line"></div>
+                                    </div>
+                                    <div class="person-top1">
+                                        <img src="./images/mine-person-bg2.png" alt="">
+                                    </div>
+                                    <div class="shade">
+                                        <div class="shade-title">
+                                            <div class="lock-main">
+                                                <img src="./images/mine-person-lock.png" alt="">
+                                            </div>
+                                            <p>高渐离</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <img src="./images/mine-person-bg1.png" alt="" class="four-angle">
+                                    <div class="person-top">
+                                        <img src="./images/mine-person_10.png" alt="">
+                                        <div class="name-bg">韩信</div>
+                                        <div class="line"></div>
+                                    </div>
+                                    <div class="person-top1">
+                                        <img src="./images/mine-person-bg2.png" alt="">
+                                    </div>
+                                    <div class="shade">
+                                        <div class="shade-title">
+                                            <div class="lock-main">
+                                                <img src="./images/mine-person-lock.png" alt="">
+                                            </div>
+                                            <p>韩信</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <img src="./images/mine-person-bg1.png" alt="" class="four-angle">
+                                    <div class="person-top">
+                                        <img src="./images/mine-person_11.png" alt="">
+                                        <div class="name-bg">程咬金</div>
+                                        <div class="line"></div>
+                                    </div>
+                                    <div class="person-top1">
+                                        <img src="./images/mine-person-bg2.png" alt="">
+                                    </div>
+                                    <div class="shade">
+                                        <div class="shade-title">
+                                            <div class="lock-main">
+                                                <img src="./images/mine-person-lock.png" alt="">
+                                            </div>
+                                            <p>程咬金</p>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                    </div>
+                    <!----------BAG END------------>
+                </div>
+            </div>
+        </div>
+    </div>
+     <div class='alert_box' id='PAY'>
+        <div class='alert_body'>
+            <div class='alert_title'>
+                <span>金币充值</span>
+                <div class='alert_close'>
+                    <img src="images/alert_close_btn.png"/>
+                </div>
+            </div>
+            <div class='alert_content'>
+                <div class='coin_list'>
+                    <span class='coin_li'>
+                        <span><img src="images/pay_coin_icon_1.png"/></span>
+                        <b>￥10</b>
+                        <a class='coin_btn btn_y'>购买</a>
+                    </span>
+                    <div class='clear'></div>
+
+                    <span class='coin_li'>
+                        <span><img src="images/pay_coin_icon_2.png"/></span>
+                        <b>￥20</b>
+                        <a class='coin_btn btn_y'>购买</a>
+                    </span>
+                    <div class='clear'></div>
+
+                    <span class='coin_li'>
+                        <span><img src="images/pay_coin_icon_3.png"/></span>
+                        <b>￥50</b>
+                        <a class='coin_btn btn_y'>购买</a>
+                    </span>
+                    <div class='clear'></div>
+
+                    <span class='coin_li'>
+                        <span><img src="images/pay_coin_icon_4.png"/></span>
+                        <b>￥100</b>
+                        <a class='coin_btn btn_y'>购买</a>
+                    </span>
+                    <div class='clear'></div>
+
+                    <span class='coin_li'>
+                        <span><img src="images/pay_coin_icon_5.png"/></span>
+                        <b>￥200</b>
+                        <a class='coin_btn btn_y'>购买</a>
+                    </span>
+                    <div class='clear'></div>
+                    
+                    <span class='coin_li'>
+                        <span><img src="images/pay_coin_icon_6.png"/></span>
+                        <b>￥500</b>
+                        <a class='coin_btn btn_y'>购买</a>
+                    </span>
+                    <div class='clear'></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class='alert_box' id='LINE'>
+        <div class='alert_body'>
+            <div class='alert_title'>
+                <span>走势图</span>
+                <div class='alert_close'>
+                    <img src="images/alert_close_btn.png"/>
+                </div>
+            </div>
+            <div class='alert_content'>
+            <table class='line_table'>
+                <tr>
+                    <th class='line_left'><span>期号</span></th>
+                    <th><span>大</span></th>
+                    <th><span>小</span></th>
+                    <th><span>单</span></th>
+                    <th><span>双</span></th>
+                    <th><span>三条</span></th>
+                    <th class='line_left'><span>顺子</span></th>
+                    <th><span>英雄</span></th>
+                </tr>
+                <tr>
+                    <td>0572</td>
+                    <td><img src="images/line_icon_y.png"></td>
+                    <td></td>
+                    <td><img src="images/line_icon_b.png"></td>
+                    <td></td>
+                    <td><img src="images/line_icon_b.png"></td>
+                    <td></td>
+                    <td>王昭君</td>
+                </tr>
+            </table>
+            </div>
+        </div>
+    </div>
+    <div class='alert_box' id='QUES'>
+        <div class='alert_body'>
+            <div class='alert_title'>
+                <span>帮助</span>
+                <div class='alert_close'>
+                    <img src="images/alert_close_btn.png"/>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class='page_box'>
+        <div class='page_bg'>
+            <img src="images/bg.jpg"/>
+        </div>
+        <div class='page_body'>
+
+            <div class='header'>
+                <div class='infobox'>
+                    <div class='headimg'>
+                        <img src="images/headimg.jpg" onerror='this.src="images/channel_qrcode_errorimg.png"'/>
+                    </div>
+                    <span class='header_nickname'>昵称：小马同学</span>
+                    <div class='header_coin_box'>
+                        <div class='header_coin'><img src="images/header_coin.png"/></div>
+                        <span class='header_coinnum'>199999</span>
+                        <div class='header_plus btn' name='PAY'><img src="images/header_plus.png"/></div>
+                    </div>
+                </div>
+                <div class='btnbox'>
+                    <span class='header_icon_bag btn' name='BAG'><img src="images/header_icon_bag.png"/></span>
+                    <span class='header_icon_line btn' name='LINE'><img src="images/header_icon_line.png"/></span>
+                    <span class='header_icon_ques btn' name='QUES'><img src="images/header_icon_ques.png"/></span>
+                </div>
+            </div>
+            <div class='clear'></div>
+
+            <div class='game_box'>
+                <div class='game_nav'>
+                    <span name='HERO' class='on'>英雄场</span>
+                    <span name='NUM'>精确场</span><!-- 
+                    <span name='SING-PLUR'>单双场</span> -->
+                </div>
+                <div class='game_content'>
+
+
+                    <div id='HERO' class='on'>
+                        <div class='game_show'>
+                            <div class='game_logo'>
+                                <div class="imageflow"> 
+                                    <span><img src="images/hero_1.png"/></span>
+                                    <span><img src="images/hero_2.png"/></span>
+                                    <span><img src="images/hero_3.png"/></span>
+                                    <span><img src="images/hero_4.png"/></span>
+                                    <span><img src="images/hero_5.png"/></span>
+                                    <span><img src="images/hero_6.png"/></span>
+                                    <span><img src="images/hero_7.png"/></span>
+                                    <span><img src="images/hero_8.png"/></span>
+                                    <span><img src="images/hero_9.png"/></span>
+                                </div>
+                                <div class='choose_border'><img src='images/showhero_border.png'/></div>
+                            </div>
+                            <div class='game_chest_box'>
+                                <div class='game_chest_rate'>
+                                    <span class='on'></span>
+                                    <span class='on'></span>
+                                    <span class='on'></span>
+                                    <span class='on'></span>
+                                    <span class='on'></span>
+                                </div>
+                                <div class='game_chest_light'>
+                                    <img src="images/game_chest_light.png"/>
+                                </div>
+                                <div class='game_chest_img game_chest_img_on'>
+                                </div>
+                            </div>
+                            <div class='game_timer_box'>
+                                <div class='game_timer_bg'>
+                                    <img src="images/game_timer_bg.png"/>
+                                </div>
+                                <span><a>-</a>s</span>
+                            </div>
+                        </div>
+                        <div class='game_choose'>
+                            <span><a>程咬金<b>1:60</b></a></span>
+                            <span><a>韩信<b>1:860</b></a></span>
+                            <span><a>老夫子<b>1:60</b></a></span>
+                            <span><a>鲁班<b>1:60</b></a></span>
+                            <span><a>王昭君<b>1:60</b></a></span>
+                            <span><a>武则天<b>1:60</b></a></span>
+                            <span><a>项羽<b>1:60</b></a></span>
+                            <span><a>小乔<b>1:60</b></a></span>
+                            <span><a>赵云<b>1:60</b></a></span>
+                        </div>
+                        <div class='game_input'>
+                            <span class='max btn_b'>撤回</span>
+                            <span class='deal btn_y'>下注</span>
+                            <div class='moneyinput'>
+                                <input type="number" value="10" onchange="check_value(this);"/>
+                                <div class='minus'><img src="images/btn_game_minus.png"/></div>
+                                <div class='plus'><img src="images/btn_game_plus.png"/></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id='NUM'>
+                        <div class='game_show'>
+                            <div class='game_logo'>
+                                <span>王者荣耀在线人数竞猜</span>
+                                <a class='game_allnum'>123,127,555</a>
+                                <img src="images/game_num_box_bg.png"/>
+                                <div class='game_num_box'>
+                                    <span>
+                                        <img src="images/game_num_border.png">
+                                        <div>
+                                            <a>0</a>
+                                            <a>1</a>
+                                            <a>2</a>
+                                            <a>3</a>
+                                            <a>4</a>
+                                            <a>5</a>
+                                            <a>6</a>
+                                            <a>7</a>
+                                            <a>8</a>
+                                            <a>9</a>
+                                        </div>
+                                    </span>
+                                    <span>
+                                        <img src="images/game_num_border.png">
+                                        <div>
+                                            <a>0</a>
+                                            <a>1</a>
+                                            <a>2</a>
+                                            <a>3</a>
+                                            <a>4</a>
+                                            <a>5</a>
+                                            <a>6</a>
+                                            <a>7</a>
+                                            <a>8</a>
+                                            <a>9</a>
+                                        </div>
+                                    </span>
+                                    <span>
+                                        <img src="images/game_num_border.png">
+                                        <div>
+                                            <a>0</a>
+                                            <a>1</a>
+                                            <a>2</a>
+                                            <a>3</a>
+                                            <a>4</a>
+                                            <a>5</a>
+                                            <a>6</a>
+                                            <a>7</a>
+                                            <a>8</a>
+                                            <a>9</a>
+                                        </div>
+                                    </span>
+                                </div>
+                                <div class='game_num_end'>
+                                    <img src="images/game_num_end_bg.png"/>
+                                    <span>7+2+3=12</span>
+                                    <a>小</a>
+                                </div>
+                            </div>
+                            <div class='game_chest_box'>
+                                <div class='game_chest_rate'>
+                                    <span class='on'></span>
+                                    <span class='on'></span>
+                                    <span class='on'></span>
+                                    <span class='on'></span>
+                                    <span class='on'></span>
+                                </div>
+                                <div class='game_chest_light'>
+                                    <img src="images/game_chest_light.png"/>
+                                </div>
+                                <div class='game_chest_img game_chest_img_on'>
+                                </div>
+                            </div>
+                            <div class='game_timer_box'>
+                                <div class='game_timer_bg'>
+                                    <img src="images/game_timer_bg.png"/>
+                                </div>
+                                <span><a>-</a>s</span>
+                            </div>
+                        </div>
+                        <!-- <div class='game_num_show'>
+                            <div class='game_num_bg'>
+                                <img src="images/game_num_bg.png"/>
+                            </div>
+                            <p>王者荣耀同时在线人数竞猜开奖</p>
+                            <span></span>
+                            <div class='game_num_stat'>
+                               <b>大</b>
+                            </div>
+                        </div> -->
+                        <div class='game_choose'>
+                            <span class='big'><a>大<b>1:2</b></a></span>
+                            <span class='singular'><a>单号<b>1:60</b></a></span>
+                            <span class='straight'><a>顺子<b>1:60</b></a></span>
+                            <span class='little'><a>小<b>1:2</b></a></span>
+                            <span class='dual'><a>双号<b>1:60</b></a></span>
+                            <span class='set'><a>三条<b>1:60</b></a></span>
+                        </div>
+                        <div class='game_input'>
+                            <span class='max btn_b'>撤回</span>
+                            <span class='deal btn_y'>下注</span>
+                            <div class='moneyinput'>
+                                <input type="number" value="10" onchange="check_value(this);"/>
+                                <div class='minus'><img src="images/btn_game_minus.png"/></div>
+                                <div class='plus'><img src="images/btn_game_plus.png"/></div>
+                            </div>
+                        </div>
+                    </div>
+<!-- 
+
+
+                    <div id='SING-PLUR'>
+                        <div class='game_show'>
+                            <div class='game_logo'>
+                                <img src="images/game_logo.png"/>
+                            </div>
+                            <div class='game_chest_box'>
+                                <div class='game_chest_rate'>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span class='on'></span>
+                                    <span class='on'></span>
+                                </div>
+                                <div class='game_chest_light none'>
+                                    <img src="images/game_chest_light.png"/>
+                                </div>
+                                <div class='game_chest_img'>
+                                </div>
+                            </div>
+                            <div class='game_timer_box'>
+                                <div class='game_timer_bg'>
+                                    <img src="images/game_timer_bg.png"/>
+                                </div>
+                                <span><a>-</a>s</span>
+                            </div>
+                        </div>
+                        <div class='game_num_show'>
+                            <div class='game_num_bg'>
+                                <img src="images/game_num_bg.png"/>
+                            </div>
+                            <p>王者荣耀同时在线人数竞猜开奖</p>
+                            <span></span>
+                            <div class='game_num_stat'>
+                               <b>单</b>
+                               <b>双</b>
+                            </div>
+                        </div>
+                        <div class='game_choose'>
+                            <span class='on'><a>三条<b>1:60</b></a></span>
+                            <span><a>顺子<b>1:60</b></a></span>
+                            <span><a>单号<b>1:60</b></a></span>
+                            <span><a>双号<b>1:60</b></a></span>
+                        </div>
+                        <div class='game_input'>
+                            <span class='max btn_b'>最大</span>
+                            <span class='deal btn_y'>下注</span>
+                            <div class='moneyinput'>
+                                <input type="number" value="10" onchange="check_value(this);"/>
+                                <div class='minus'><img src="images/btn_game_minus.png"/></div>
+                                <div class='plus'><img src="images/btn_game_plus.png"/></div>
+                            </div>
+                        </div>
+                    </div>
+ -->
+
+                </div>
+            </div>
+
+        </div>
+        
+    </div>
+
+
+    
+    </body>
+</html>

@@ -1,0 +1,254 @@
+.headarea{
+	position: relative;
+	width: 100%;
+	height: 36%;
+	background: url('../images/mine_headarea_bg.jpg');
+	background-size: 100% 100%;
+}
+.headimgbox{
+	position: absolute;
+	display: block;
+	top: 15%;
+	height: 40%;
+	width: 100%;
+}
+.headimgbox>img{
+	margin: 0 auto;
+	height: 100%;
+	border-radius: 100px;
+	border: 1px solid #5886dd;
+}
+.headimgbox>span{
+	display: block;
+	position: absolute;
+	height: 30%;
+	bottom: -15%;
+	width: 100%;
+}
+.headimgbox>span>img{
+	height: 100%;
+	margin: 0 auto;
+}
+.userinfo{
+	position: absolute;
+	top: 65%;
+	width: 100%;
+	text-align: center;
+	line-height: 24px;
+	margin-left: 20px;
+}
+.userinfo>a{
+	display: inline-block;
+	background: #ba8d5b;
+	padding: 0 8px;
+	border-radius: 50px;
+	font-size: .85rem;
+	margin-left: 10px;
+
+}
+.cashbox{
+	position: absolute;
+	bottom: 0px;
+	width: 100%;
+	padding: 8px 0;
+	background: rgba(50,77,129,0.35);
+}
+.cashbox>span{
+	display: block;
+	box-sizing: border-box;
+	float: left;
+	width: 50%;
+	text-align: center;
+	line-height: 20px;
+	color: rgb(200,200,200);
+}
+.cashbox>span:first-child{
+	border-right: 1px solid rgba(200,200,200,0.3);
+}
+.musicbtn{
+	position: absolute;
+	left: 20px;
+	top: 10%;
+}
+.musicbtn>img{
+	height: 32px;
+}
+.city{
+	position: absolute;
+	right: 20px;
+	top: 10%;
+	margin-top: 6px;
+}
+.city>img{
+	display: inline-block;
+	float: left;
+	height: 24px;
+}
+.city>span{
+	display: inline-block;
+	float: left;
+	line-height: 24px;
+	padding-left: 4px;
+}
+.option_box{
+	position: relative;
+	width: 100%;
+	height: 64%;
+	padding-top: 14px;
+	background: rgba(24,28,46,0.8);
+}
+.option_box>div{
+	position: relative;
+	line-height: 44px;
+	height: 44px;
+	font-size: 16px;
+	padding-left: 20px;
+	border-bottom: 1px solid #324460;
+}
+.option_box>div:first-child{
+	border-top: 1px solid #324460;
+}
+.option_box>div>img{
+	float: left;
+	height: 22px;
+	padding-top: 10px;
+	padding-right: 10px;
+	display: inline-block;
+}
+.option_box>div>a>img{
+	float: right;
+	height: 16px;
+	padding-top: 14px;
+	display: inline-block;
+	padding-right: 20px;
+}
+.option_box>div>b{
+	position: absolute;
+	display: block;
+	top: 50%;
+	margin-top: -4px;
+	left: 124px;
+	width: 6px;
+	height: 6px;
+	border-radius: 4px;
+	background: red;
+}
+.mine_view{
+	display: none;
+	position: absolute;
+	top: 0px;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: url('../images/view_bg.jpg');
+	background-size: 100% 100%;
+	z-index: 999;
+	box-sizing: border-box;
+	padding-top: 30px;
+	padding-left: 16px;
+	padding-right: 16px;
+}
+.view_title{
+	display: block;
+	font-size: 16px;
+	line-height: 40px;
+	color: #75c2ff;
+	letter-spacing: 1px;
+}
+.view_title>a{
+	padding-left: 5px;
+}
+.form_input{
+	width: 100%;
+	color: white;
+	box-sizing: border-box;
+	padding-left: 20px;
+	background: url('../images/input_bg.png');
+	background-size: 100% 100%;
+	border: 0px;
+	margin-top: 10px;
+	font-size: 16px;
+	line-height: 40px;
+}
+.view_btn{
+	margin-top: 20px;
+	display: block;
+	line-height: 40px;
+	font-size: 16px;
+	color: rgb(30,30,30);
+	text-align: center;
+	border-radius: 5px;
+	font-weight: bold;
+	letter-spacing: 1px;
+	background: url('../images/view_btn_bg.png');
+	background-size: 100% 100%;
+}
+.view_back_btn{
+	margin-top: 20px;
+	display: block;
+	line-height: 40px;
+	font-size: 16px;
+	color: rgb(230,230,230);
+	text-align: center;
+	border-radius: 5px;
+	font-weight: bold;
+	letter-spacing: 1px;
+	background: rgba(34,48,89,0.5);
+	border: 1px solid #324460;
+}
+.view_text{
+	margin-top: 30px;
+	line-height: 24px;
+	font-size: 16px;
+}
+
+.setting_li{
+	display: block;
+	color: #c4a237;
+	line-height: 30px;
+	text-align: left;
+	padding: 5px 10px;
+	box-sizing: border-box;
+	border-bottom: 1px solid #324460;
+}
+.setting_li>a{
+	display: block;
+	color: #fff;
+	line-height: 30px;
+	text-align: left;
+	padding: 5px 10px;
+	box-sizing: border-box;
+}
+@media screen and (max-height: 460px){
+	.option_box>div{
+		line-height: 36px;
+		height: 36px;
+		font-size: 14px;
+		padding-left: 20px;
+		border-bottom: 1px solid #324460;
+	}
+	.headimgbox{
+		top: 10%;
+    	height: 36%;
+	}
+	.userinfo{
+    	top: 52%;
+	}
+	.city{
+		top: 12%;
+     	margin-top: 3px;
+	}
+	.city>img {
+	    height: 18px;
+	}
+	.city>span {
+	    line-height: 18px;
+	}
+	.musicbtn {
+	    top: 12%;
+	}
+	.musicbtn>img {
+	    height: 24px;
+	}
+}
+	

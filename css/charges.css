@@ -1,0 +1,80 @@
+.charges_box{
+	width: 100%;
+	box-sizing: border-box;
+	padding: 0 14px;
+}
+.input_box{
+	display: block;
+	width: 100%;
+	margin-top: 12px;
+	line-height: 30px;
+}
+.input_box>span{
+	display: block;
+	width: 28%;
+	text-align: right;
+	float: left;
+}
+.input_box>a{
+	color: #e9d36b;
+}
+.input_box>b{
+	position: relative;
+	left: 30%;
+	font-size: 12px;
+}
+.input_box>input{
+	box-sizing: border-box;
+	height: 30px;
+	padding-left: 10px;
+	border: 1px solid #47749d;
+	background: none; 
+	width: 66%;
+	color: white;
+}
+.input_box>input::-webkit-input-placeholder{
+    color: rgb(162,172,194);
+}
+.charges_btn{
+	padding-top: 20px;
+	width: 100%;
+}
+.charges_btn>span{
+	display: inline-block;
+	color: white;
+	line-height: 36px;
+	width: 40%;
+	margin-left:5%;
+	margin-right:0%;
+	text-align: center;
+	border-radius: 20px;
+	background: #44567e;
+	border:1px solid #44567e;
+}
+.charges_btn>span:last-child{
+	float: right;
+	margin-left:0%;
+	margin-right:5%;
+	background: #20273a;
+	border:1px solid #44567e;
+}
+.verify_input>input{
+	width: 36%;
+}
+.verify_input>a{
+	display: inline-block;
+	text-align: center;
+	width: 30%;
+	height: 30px;
+	border-radius: 15px;
+	/* color: rgb(162,172,194); */
+	color: rgb(220,220,220);
+	background: #44567e;
+}
+.nomargin{
+	margin:0;
+}
+.unclick{
+	background: #444444 !important;
+	color: rgb(162,162,162) !important;
+}
